@@ -2,7 +2,8 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'geekshop/index.html')
+    context = {}
+    return render(request, 'geekshop/index.html', context)
 
 
 def contacts(request):
