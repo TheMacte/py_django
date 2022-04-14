@@ -1,14 +1,7 @@
+{% extends 'geekshop/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Каталог</title>
-	<link rel="stylesheet" type="text/css" href="{% static 'mainapp/style.css' %}">
-	<link rel="stylesheet" href="{% static 'mainapp/fonts/font-awesome/css/font-awesome.css' %}">
-</head>
-<body>
-	<div class="container">
+
+{% block content %}
 		<div class="hero-white">
 			{% include 'geekshop/includes/header.html' %}
 		</div>
@@ -103,12 +96,4 @@
 				</div>
 			</div>
 		</div>
-
-		<div class="clr"></div>
-
-	</div>	
-
-	{% include 'geekshop/includes/footer.html' %}
-
-</body>
-</html>
+{% endblock %}
