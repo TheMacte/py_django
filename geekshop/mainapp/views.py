@@ -10,5 +10,5 @@ links_menu = [
 
 
 def products(request):
-    context = {'links_menu': links_menu, 'object': Product.objects.get(id=1)}
+    context = {'links_menu': links_menu, 'object': Product.objects.get(id=2)}
     return render(request, 'mainapp/products.html', context)
