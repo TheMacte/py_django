@@ -4,9 +4,13 @@ from mainapp.models import Product
 
 links_menu = [
     {'href': 'index', 'title': 'Магазин', 'name': 'домой'},
-    {'href': 'products', 'title': 'Продукты', 'name': 'продукты'},
+    {'href': 'products:index', 'title': 'Продукты', 'name': 'продукты'},
     {'href': 'contacts', 'title': 'Контакты', 'name': 'контакты'},
 ]
+
+def product(request, pk):
+    print(pk)
+    return
 
 
 def products(request):
