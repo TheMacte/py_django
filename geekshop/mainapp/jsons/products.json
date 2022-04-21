@@ -1,6 +1,6 @@
 [
   {
-    "category": 3,
+    "category": "стулья",
     "name": "удобный стул",
     "image": "products_images/product-4.jpg",
     "short_desc": "Красный",
@@ -9,7 +9,7 @@
     "quantity": 10
   },
   {
-    "category": 4,
+    "category": "Лампы",
     "name": "Лампа сфера",
     "image": "products_images/product-1.jpg",
     "short_desc": "Уникальный дизайн",
@@ -18,7 +18,7 @@
     "quantity": 10
   },
   {
-    "category": 5,
+    "category": "Кресла",
     "name": "Кресло двойка",
     "image": "products_images/product-2.jpg",
     "short_desc": "Удобные кресла",
@@ -27,7 +27,7 @@
     "quantity": 11
   },
   {
-    "category": 4,
+    "category": "Лампы",
     "name": "Лампа плюс",
     "image": "products_images/product-2-sm.jpg",
     "short_desc": "Настольная",
@@ -36,7 +36,7 @@
     "quantity": 9
   },
   {
-    "category": 4,
+    "category": "Лампы",
     "name": "Настенная лампа",
     "image": "products_images/product-11.jpg",
     "short_desc": "Таршер",
@@ -45,7 +45,7 @@
     "quantity": 12
   },
   {
-    "category": 6,
+    "category": "Диваны",
     "name": "Серый диван",
     "image": "",
     "short_desc": "Серый диван+",
