@@ -1,34 +1,18 @@
 [
-    {
-    "model": "mainapp.productcategory",
-    "pk": 3,
-    "fields": {
-      "name": "стулья",
-      "description": ""
-    }
+  {
+    "name": "стулья",
+    "description": ""
   },
   {
-    "model": "mainapp.productcategory",
-    "pk": 4,
-    "fields": {
-      "name": "Лампы",
-      "description": ""
-    }
+    "name": "Лампы",
+    "description": ""
   },
   {
-    "model": "mainapp.productcategory",
-    "pk": 5,
-    "fields": {
-      "name": "Кресла",
-      "description": ""
-    }
+    "name": "Кресла",
+    "description": ""
   },
   {
-    "model": "mainapp.productcategory",
-    "pk": 6,
-    "fields": {
-      "name": "Диваны",
-      "description": ""
-    }
+    "name": "Диваны",
+    "description": ""
   }
 ]
