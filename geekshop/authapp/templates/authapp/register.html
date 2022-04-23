@@ -2,15 +2,14 @@
 {% load static %}
 
 {% block content %}
-    <form class="form-horizontal" action="{% url 'auth:login' %}" method="post">
+    <form class="form-horizontal" action="{% url 'auth:register' %}" method="post" enctype="multipart/form-data">
       {% csrf_token %}
-      {{ login_form  }}
+      {{ register_form  }}
       <div class="mb-3">
 
       </div>
-      <button type="submit" class="btn btn-primary">Войти</button>
+      <button type="submit" class="btn btn-primary">Регистрация</button>
     </form>
-    <a href="{% url 'auth:register' %}">Регистрация</a>
     <button class="btn btn-round form-control last">
         <a href="{% url 'index' %}" class="">
             на главную
