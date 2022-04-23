@@ -11,4 +11,4 @@ class ShopUserLoginForm(AuthenticationForm):
     def __init__(self, *args, **kwargs):
         super(ShopUserLoginForm, self).__init__(*args, **kwargs)
         for field_name, field in self.fields.items():
-            field.wiget.attr['class'] = 'form-control'
+            field.widget.attrs['class'] = 'form-control'
