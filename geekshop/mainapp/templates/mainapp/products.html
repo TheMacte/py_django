@@ -11,8 +11,8 @@
 				<ul class="links-menu">
 					{% for link_sub in links_menu_sub %}
 						<li>
-							<a href="/{{ link_sub.href }}"
-							   class="{% if request.resolver_match.url_name == link_sub.href %}active{% endif %}">{{ link_sub.name }}</a>
+							<a href="/{{ link_sub.pk }}/"
+							   class="{% if request.resolver_match.url_name == link_sub.name %}active{% endif %}">{{ link_sub.name }}</a>
 						</li>
         			{% endfor %}
 				</ul>
@@ -71,7 +71,7 @@
 						<div class="block">
 							<a href="#"><img src="/media//{{ product.image }}" alt="">
 								<div class="text">
-									<img src="{% static  'mainapp/img/icon-hover.png' %}" alt="img">
+									<img src="{% static  'geekshop/img/icon-hover.png' %}" alt="img">
 									<h4>{{ product.name }}</h4>
 									<p>{{ product.short_desc }}</p>
 								</div>

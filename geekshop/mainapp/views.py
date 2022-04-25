@@ -9,11 +9,6 @@ links_menu = [
 ]
 
 
-def product(request, pk):
-    print(pk)
-    return
-
-
 def products(request, pk=None):
     title = 'Каталог'
     links_menu_sub = ProductCategory.objects.all()
@@ -32,8 +27,8 @@ def products(request, pk=None):
             'links_menu_sub': links_menu_sub,
             'category': category,
             'products': products
-            # 'object': Product.objects.get(id=2)
         }
+
         return render(request, 'mainapp/products_list.html', context)
 
     same_product = Product.objects.all()[3:5]
@@ -42,7 +37,6 @@ def products(request, pk=None):
         'links_menu': links_menu,
         'links_menu_sub': links_menu_sub,
         'same_products': same_product
-        # 'object': Product.objects.get(id=2)
     }
 
     return render(request, 'mainapp/products.html', context=context)
