@@ -7,17 +7,7 @@
 		</div>
 
 		<div class="details">
-			<div class="links clearfix">
-				<ul class="links-menu">
-					{% for link_sub in links_menu_sub %}
-						<li>
-							<a href="/{{ link_sub.href }}"
-							   class="{% if request.resolver_match.url_name == link_sub.href %}active{% endif %}">{{ link_sub.name }}</a>
-						</li>
-        			{% endfor %}
-				</ul>
-			</div>
-
+			{% include 'mainapp/includes/inc_menu.html' %}
 			<div class="products_list">
 				<div class="title cleafix">
 					<h2>
