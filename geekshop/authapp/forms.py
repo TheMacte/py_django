@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
 from django import forms
+=======
+from django import forms
+from django.contrib.auth.forms import AuthenticationForm, UserCreationForm, UserChangeForm
+>>>>>>> e93ebd5 (get all from lesson_6)
 
 from authapp.models import ShopUser
 
@@ -28,7 +33,11 @@ class ShopUserRegisterForm(UserCreationForm):
     def clean_age(self):
         data = self.cleaned_data['age']
         if data < 18:
+<<<<<<< HEAD
             raise forms.ValidationError('Вы слишком молоды')
+=======
+            raise forms.ValidationError('Вы слишком молоды!')
+>>>>>>> e93ebd5 (get all from lesson_6)
         return data
 
 

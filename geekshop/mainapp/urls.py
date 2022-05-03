@@ -1,9 +1,17 @@
-from django.urls import path, include
-from .views import products
+from django.urls import path
+from .views import products, product
+
+app_name = 'mainapp'
 
 app_name = 'mainapp'
 
 urlpatterns = [
     path('', products, name='index'),
+<<<<<<< HEAD
     path('category/<int:pk>/', products, name='category')
 ]
+=======
+    path('category/<int:pk>/', products, name='category'),
+    path('<int:pk>/', product, name='detail'),
+]
+>>>>>>> e93ebd5 (get all from lesson_6)

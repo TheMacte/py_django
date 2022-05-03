@@ -1,4 +1,5 @@
 [
+<<<<<<< HEAD
   {
     "name": "стулья",
     "description": ""
@@ -14,5 +15,22 @@
   {
     "name": "Диваны",
     "description": ""
+=======
+    {
+      "name": "стулья",
+      "description": ""
+  },
+  {
+      "name": "Лампы",
+      "description": ""
+  },
+  {
+      "name": "Кресла",
+      "description": ""
+  },
+  {
+      "name": "Диваны",
+      "description": ""
+>>>>>>> e93ebd5 (get all from lesson_6)
   }
 ]

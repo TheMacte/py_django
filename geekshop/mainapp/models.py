@@ -15,7 +15,11 @@ class Product(models.Model):
         on_delete=models.CASCADE
     )
     name = models.CharField(
+<<<<<<< HEAD
         verbose_name='имя продукта',
+=======
+        verbose_name='имя продукт',
+>>>>>>> e93ebd5 (get all from lesson_6)
         max_length=128
     )
     image = models.ImageField(
@@ -23,16 +27,38 @@ class Product(models.Model):
         blank=True
     )
 
+<<<<<<< HEAD
     short_desc = models.CharField(verbose_name='краткое описание', max_length=60, blank=True)
 
     description = models.TextField(verbose_name='описание', blank=True)
 
     price = models.DecimalField(verbose_name='цена', max_digits=8, decimal_places=2, default=0)
 
+=======
+    short_desc = models.CharField(
+        verbose_name='краткое описание',
+        max_length=60,
+        blank=True
+    )
+    description = models.TextField(
+        verbose_name='описание',
+        blank=True
+    )
+    price = models.DecimalField(
+        verbose_name='цена',
+        max_digits=8,
+        decimal_places=2,
+        default=0
+    )
+>>>>>>> e93ebd5 (get all from lesson_6)
     quantity = models.PositiveIntegerField(
         verbose_name='количество на складе',
         default=0
     )
 
     def __str__(self):
+<<<<<<< HEAD
         return f'{self.name} ({self.category.name})'
+=======
+        return f"{self.name} ({self.category.name})"
+>>>>>>> e93ebd5 (get all from lesson_6)
